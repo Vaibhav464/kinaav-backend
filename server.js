@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://www.kinaav.in',
+  origin: ['http://localhost:3000', 'https://www.kinaav.in'],
   credentials: true
 }));
 app.use(express.json());
